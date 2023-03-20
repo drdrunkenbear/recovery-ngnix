@@ -13,7 +13,7 @@ spec:
       storage: 1Gi
   storageClassName: "longhorn-static"
   volumeMode: Filesystem
-  volumeName: pvc-test
+  volumeName: demo-pvc-claim 
 ---
 apiVersion: apps/v1
 kind: Deployment
