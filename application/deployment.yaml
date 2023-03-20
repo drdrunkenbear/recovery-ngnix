@@ -5,13 +5,15 @@ metadata:
   annotations:
     volume.aplha.kubernetes.io/storage-class: longhorn
 spec:
-  storageClassName: "longhorn"
+spec:
+  accessModes:
+    - ReadWriteOnce
   resources:
     requests:
       storage: 1Gi
+  storageClassName: longhorn-static
   volumeMode: Filesystem
-  accessModes:
-    - ReadWriteOnce
+  volumeName: pvc-test
 ---
 apiVersion: apps/v1
 kind: Deployment
