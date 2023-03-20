@@ -11,7 +11,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  storageClassName: longhorn-static
+  storageClassName: longhorn
   volumeMode: Filesystem
   volumeName: pvc-test
 ---
