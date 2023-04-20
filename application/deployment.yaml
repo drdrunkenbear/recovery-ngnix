@@ -5,7 +5,6 @@ metadata:
   annotations:
     volume.aplha.kubernetes.io/storage-class: longhorn
 spec:
-spec:
   accessModes:
     - ReadWriteOnce
   resources:
